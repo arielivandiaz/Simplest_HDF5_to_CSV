@@ -17,7 +17,7 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+#/*********************************************************************************************    
 
 def csv_to_matrix(file):
 
@@ -36,9 +36,6 @@ def matrix_to_csv(file, matrix):
     df=panda.DataFrame(matrix)
 
     df.to_csv(file, sep='\t', encoding='utf-8', index=False,header=False)
-
-
-    print file
 
 
 #/*********************************************************************************************    
@@ -78,7 +75,7 @@ def h5_to_matrix(file,value):
 
     h5f = h5py.File(file,'r')
     b = h5f[value][:]
-    print b
+    
     h5f.close()
 
 
